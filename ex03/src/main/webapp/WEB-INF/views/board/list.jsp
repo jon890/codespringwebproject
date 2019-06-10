@@ -39,7 +39,9 @@
                                 	<td><c:out value="${board.bno}" /></td>
                                 	<td>
                                 		<a class="move" href="${board.bno}">
-                                		<c:out value="${board.title}" /></a>
+                                		<c:out value="${board.title}" />
+                                		<b>[<c:out value="${board.replyCnt}" />]</b>
+                                		</a>
                                 	</td>
                                 	<td><c:out value="${board.writer}" /></td>
                                 	<td><fmt:formatDate pattern="yyyy-MM-dd"
